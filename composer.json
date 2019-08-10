@@ -1,0 +1,14 @@
+{
+  "name": "davidnadejdin/laravelrobokassa",
+  "description": "Package for Laravel for working with a robokassa",
+  "authors": [
+    {
+      "name": "Davidnadejdin",
+      "email": "Davidnadejdin@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "idma/robokassa": "dev-master"
+  }
+}
