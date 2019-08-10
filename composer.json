@@ -8,7 +8,22 @@
     }
   ],
   "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Davidnadejdin\\LaravelRobokassa\\": "src/"
+    }
+  },
   "require": {
+    "php": ">=7.0",
+    "ext-json": "*",
+    "laravel/framework": "~5.5",
     "idma/robokassa": "dev-master"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Davidnadejdin\\LaravelRobokassa\\SleepingOwlServiceProvider"
+      ]
+    }
   }
 }
