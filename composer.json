@@ -22,7 +22,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Davidnadejdin\\LaravelRobokassa\\SleepingOwlServiceProvider"
+        "Davidnadejdin\\LaravelRobokassa\\RobokassaServiceProvider"
       ]
     }
   }
