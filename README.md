@@ -2,8 +2,7 @@
 [![Total Downloads](https://poser.pugx.org/davidnadejdin/laravelrobokassa/downloads)](https://packagist.org/packages/davidnadejdin/laravelrobokassa)
 [![Latest Unstable Version](https://poser.pugx.org/davidnadejdin/laravelrobokassa/v/unstable)](https://packagist.org/packages/davidnadejdin/laravelrobokassa)
 [![License](https://poser.pugx.org/davidnadejdin/laravelrobokassa/license)](https://packagist.org/packages/davidnadejdin/laravelrobokassa)
-[![composer.lock](https://poser.pugx.org/davidnadejdin/laravelrobokassa/composerlock)](https://packagist.org/packages/davidnadejdin/laravelrobokassa)
-[![StyleCI](https://styleci.io/repos/201632948/shield?branch=master)](https://styleci.io/repos/201632948)
+[![StyleCI](https://styleci.io/repos/201632948/shield?style=plastic&branch=master)](https://styleci.io/repos/201632948)
 
 # laravel-robokassa
 Обертка для laravel над библиотекой https://github.com/idma/robokassa
