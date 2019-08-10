@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Facade;
 class Robokassa extends Facade
 {
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     protected static function getFacadeAccessor()
     {
