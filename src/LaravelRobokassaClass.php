@@ -41,13 +41,7 @@ class LaravelRobokassaClass
             config('robokassa.login'), config('robokassa.password'), config('robokassa.password2'),
             config('robokassa.test_mode'));
 
-        if ($payment->validateResult($data)) {
-            if ($payment->getSum() == $sum) {
-                return true;
-            }
-        }
-
-        return false;
+        return $payment->validateResult($data) && $payment->getSum() === $sum;
     }
 
     /**
@@ -63,12 +57,6 @@ class LaravelRobokassaClass
             config('robokassa.test_mode')
         );
 
-        if ($payment->validateSuccess($data)) {
-            if ($payment->getSum() == $sum) {
-                return true;
-            }
-        }
-
-        return false;
+        return $payment->validateSuccess($data) && $payment->getSum() === $sum;
     }
 }
