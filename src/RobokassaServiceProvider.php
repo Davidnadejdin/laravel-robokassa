@@ -15,11 +15,11 @@ class RobokassaServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/../config/robokassa.php',
+            __DIR__ . '/../config/robokassa.php',
             'comments'
         );
 
-        App::bind('laravelrobokassa', function () {
+        App::bind('laravelrobokassa', static function () {
             return new LaravelRobokassaClass();
         });
     }
@@ -32,7 +32,7 @@ class RobokassaServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/robokassa.php' => config_path('robokassa.php'),
+            __DIR__ . '/../config/robokassa.php' => config_path('robokassa.php'),
         ], 'config');
     }
 }
