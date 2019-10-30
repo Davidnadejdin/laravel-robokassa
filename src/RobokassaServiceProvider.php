@@ -15,7 +15,7 @@ class RobokassaServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/robokassa.php',
+            __DIR__.'/../config/robokassa.php',
             'comments'
         );
 
@@ -32,7 +32,7 @@ class RobokassaServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/robokassa.php' => config_path('robokassa.php'),
+            __DIR__.'/../config/robokassa.php' => config_path('robokassa.php'),
         ], 'config');
     }
 }
