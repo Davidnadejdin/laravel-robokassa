@@ -19,7 +19,7 @@ class RobokassaServiceProvider extends ServiceProvider
             'comments'
         );
 
-        App::bind('laravelrobokassa', function () {
+        App::bind('laravelrobokassa', static function () {
             return new LaravelRobokassaClass();
         });
     }
