@@ -18,7 +18,9 @@ class LaravelRobokassaClass
     public function createPayment($invoiceId, $amount, $description): Payment
     {
         $payment = new Payment(
-            config('robokassa.login'), config('robokassa.password'), config('robokassa.password2'),
+            config('robokassa.login'),
+            config('robokassa.password'),
+            config('robokassa.password2'),
             config('robokassa.test_mode')
         );
         $payment
@@ -38,8 +40,11 @@ class LaravelRobokassaClass
     public function validateResult($data, $sum): bool
     {
         $payment = new Payment(
-            config('robokassa.login'), config('robokassa.password'), config('robokassa.password2'),
-            config('robokassa.test_mode'));
+            config('robokassa.login'),
+            config('robokassa.password'),
+            config('robokassa.password2'),
+            config('robokassa.test_mode')
+        );
 
         return $payment->validateResult($data) && $payment->getSum() === $sum;
     }
@@ -53,7 +58,9 @@ class LaravelRobokassaClass
     public function validateSuccess($data, $sum): bool
     {
         $payment = new Payment(
-            config('robokassa.login'), config('robokassa.password'), config('robokassa.password2'),
+            config('robokassa.login'),
+            config('robokassa.password'),
+            config('robokassa.password2'),
             config('robokassa.test_mode')
         );
 
