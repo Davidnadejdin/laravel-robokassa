@@ -64,6 +64,6 @@ class LaravelRobokassaClass
             config('robokassa.test_mode')
         );
 
-        return $payment->validateSuccess($data) && $payment->getSum() === $sum;
+        return $payment->validateSuccess($data) && $payment->getSum() == $sum;
     }
 }
